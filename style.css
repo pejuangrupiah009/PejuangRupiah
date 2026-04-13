@@ -212,3 +212,97 @@ footer {
     padding: 12px 30px;
   }
 }
+/* =========================
+   FONT & BASE
+========================= */
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   TEXT LOGO GOLD
+========================= */
+.logo {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  
+  /* GOLD GRADIENT */
+  background: linear-gradient(
+    135deg,
+    #fff3b0 0%,
+    #ffd700 25%,
+    #b89600 50%,
+    #ffd700 75%,
+    #fff8dc 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* GLOW */
+  text-shadow:
+    0 0 5px rgba(255,215,0,0.8),
+    0 0 10px rgba(255,215,0,0.6),
+    0 0 20px rgba(255,215,0,0.5);
+
+  position: relative;
+}
+
+/* =========================
+   SHINE EFFECT (KILAP GERAK)
+========================= */
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.8),
+    transparent
+  );
+
+  transform: skewX(-25deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+/* =========================
+   SECOND LINE (TOTO)
+========================= */
+.logo span {
+  display: block;
+  font-size: 72px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 40px;
+  }
+
+  .logo span {
+    font-size: 48px;
+  }
+}
