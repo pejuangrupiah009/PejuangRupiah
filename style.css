@@ -35,16 +35,16 @@ body {
     text-align: center;
     letter-spacing: 2px;
 
-    /* GRADIENT TEXT */
-    background: linear-gradient(90deg, #60a5fa, #2563eb, #1e40af);
+    /* GRADIENT EMAS */
+    background: linear-gradient(90deg, #ffd700, #ffb700, #b8860b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    /* GLOW EFFECT */
+    /* GLOW EMAS */
     text-shadow: 
-        0 0 5px rgba(59,130,246,0.8),
-        0 0 10px rgba(59,130,246,0.6),
-        0 0 20px rgba(37,99,235,0.5);
+        0 0 5px rgba(255,215,0,0.8),
+        0 0 10px rgba(255,215,0,0.6),
+        0 0 20px rgba(184,134,11,0.5);
 
     margin-bottom: 20px;
 }
