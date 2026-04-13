@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: radial-gradient(circle at top, #020617, #050b1a);
-    font-family: Arial, sans-serif;
-    color: white;
+    background: radial-gradient(circle at top, #0b1220, #050b1a);
+    color: #fff;
 }
 
 /* LAYOUT */
@@ -18,19 +20,19 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 260px;
-    background: linear-gradient(180deg, #020617, #0a1633);
-    padding: 20px;
-    border-right: 1px solid #1e40af;
     min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(180deg, #0a1633, #020617);
+    border-right: 1px solid #1e40af;
 }
 
 .logo {
     text-align: center;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 800;
     color: #60a5fa;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #3b82f6;
+    text-shadow: 0 0 10px #2563eb;
+    margin-bottom: 25px;
 }
 
 /* MENU */
@@ -44,37 +46,25 @@ body {
 
 .menu a {
     display: block;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     text-decoration: none;
     color: #cbd5ff;
     border: 1px solid #1e40af;
     transition: 0.3s;
+    background: rgba(255,255,255,0.02);
 }
 
 .menu a:hover {
     background: #1e40af;
-    box-shadow: 0 0 12px #3b82f6;
-}
-
-/* RESULT BOX */
-.result-box {
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #1e40af;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.result-box h3 {
-    color: #60a5fa;
-    margin-bottom: 10px;
+    box-shadow: 0 0 15px #3b82f6;
+    transform: translateX(5px);
 }
 
 /* CONTENT */
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 25px;
 }
 
 /* HEADER */
@@ -83,37 +73,37 @@ body {
 }
 
 .header input {
-    padding: 8px;
-    margin-right: 5px;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 8px;
     border: none;
-    background: #020617;
+    background: #0f172a;
     color: white;
+    margin-right: 5px;
 }
 
 .header button {
-    padding: 8px 15px;
-    background: linear-gradient(90deg, #2563eb, #1e40af);
+    padding: 10px 15px;
+    border-radius: 8px;
     border: none;
-    border-radius: 6px;
+    background: linear-gradient(90deg, #2563eb, #1e40af);
     color: white;
     cursor: pointer;
-    box-shadow: 0 0 10px #3b82f6;
+    box-shadow: 0 0 10px #2563eb;
 }
 
 /* BANNER */
 .banner {
-    background: linear-gradient(135deg, #1e3a8a, #020617);
-    padding: 30px;
+    padding: 35px;
     border-radius: 15px;
+    background: linear-gradient(135deg, #1e3a8a, #020617);
     border: 1px solid #1e40af;
+    box-shadow: 0 0 25px rgba(37,99,235,0.3);
     margin-bottom: 20px;
-    box-shadow: 0 0 20px #1e40af;
 }
 
 .banner h1 {
+    font-size: 32px;
     color: #60a5fa;
-    text-shadow: 0 0 10px #3b82f6;
 }
 
 /* CARDS */
@@ -126,16 +116,16 @@ body {
 .card {
     flex: 1;
     padding: 20px;
-    text-align: center;
-    background: #020617;
     border-radius: 12px;
+    background: rgba(255,255,255,0.03);
     border: 1px solid #1e40af;
+    text-align: center;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #3b82f6;
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #3b82f6;
 }
 
 /* GAMES */
@@ -146,22 +136,22 @@ body {
 }
 
 .game {
-    background: #020617;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
     border: 1px solid #1e40af;
     text-align: center;
     transition: 0.3s;
 }
 
 .game:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 12px #3b82f6;
+    transform: scale(1.07);
+    box-shadow: 0 0 18px #3b82f6;
 }
 
 .game img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .game span {
