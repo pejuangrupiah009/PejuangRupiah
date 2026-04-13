@@ -8,8 +8,10 @@
 }
 
 body {
-    background: radial-gradient(circle at top, #0b1220, #050b1a);
-    color: #fff;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* LAYOUT */
