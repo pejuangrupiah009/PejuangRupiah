@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top, #020617, #050b1a);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #020617, #0a1633);
+    padding: 20px;
+    border-right: 1px solid #1e40af;
+    min-height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #60a5fa;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #3b82f6;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #cbd5ff;
+    border: 1px solid #1e40af;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #1e40af;
+    box-shadow: 0 0 12px #3b82f6;
+}
+
+/* RESULT BOX */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #1e40af;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result-box h3 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    margin-bottom: 20px;
+}
+
+.header input {
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #020617;
+    color: white;
+}
+
+.header button {
+    padding: 8px 15px;
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(135deg, #1e3a8a, #020617);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #1e40af;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #1e40af;
+}
+
+.banner h1 {
+    color: #60a5fa;
+    text-shadow: 0 0 10px #3b82f6;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background: #020617;
+    border-radius: 12px;
+    border: 1px solid #1e40af;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #3b82f6;
+}
+
+/* GAMES */
+.games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.game {
+    background: #020617;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1e40af;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #3b82f6;
+}
+
+.game img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game span {
+    display: block;
+    margin-top: 8px;
+    color: #93c5fd;
+}
