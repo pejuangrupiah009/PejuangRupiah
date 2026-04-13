@@ -25,7 +25,7 @@ body {
     min-height: 100vh;
     padding: 20px;
     background: linear-gradient(180deg, #0a1633, #020617);
-    border-right: 1px solid #1e40af;
+    border-right: 1px solid #0f0f0f;
 }
 
 .logo {
