@@ -29,12 +29,12 @@ body {
 }
 
 .logo {
-    text-align: center;
-    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
     font-weight: 800;
     color: #60a5fa;
-    text-shadow: 0 0 10px #2563eb;
-    margin-bottom: 25px;
+    text-shadow: 0 0 10px #3b82f6;
+    letter-spacing: 2px;
 }
 
 /* MENU */
